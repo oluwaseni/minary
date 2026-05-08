@@ -1,0 +1,15 @@
+<section id="services" class="services section">
+  <div class="wrap">
+    <div class="services__header">
+      <span class="section-label">— What We Offer</span>
+      <h2 class="h2 services__headline">Everything Your Business Needs Online</h2>
+    </div>
+    <div class="services__grid">
+      <div class="services__card" *ngFor="let service of config.services">
+        <span class="services__card-icon">{{ service.icon }}</span>
+        <h3 class="h3 services__card-title">{{ service.title }}</h3>
+        <p class="body-text services__card-desc">{{ service.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>

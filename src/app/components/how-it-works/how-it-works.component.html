@@ -1,0 +1,16 @@
+<section id="how-it-works" class="hiw section">
+  <div class="wrap">
+    <div class="hiw__header">
+      <span class="section-label">— The Process</span>
+      <h2 class="h2 hiw__headline">From First Message to First Post in 8 Days</h2>
+    </div>
+    <div class="hiw__grid">
+      <div class="hiw__step" *ngFor="let step of config.steps">
+        <div class="hiw__step-watermark">{{ step.num }}</div>
+        <div class="hiw__step-num">{{ step.num }}</div>
+        <h3 class="h3 hiw__step-title">{{ step.title }}</h3>
+        <p class="hiw__step-desc">{{ step.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>

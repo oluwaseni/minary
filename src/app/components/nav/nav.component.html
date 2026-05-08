@@ -1,0 +1,39 @@
+<nav class="nav" [class.scrolled]="scrolled()">
+  <div class="nav__wrap">
+
+    <!-- Logo -->
+    <a href="#home" class="nav__logo">{{ config.business.name }}</a>
+
+    <!-- Desktop Links -->
+    <ul class="nav__links">
+      <li *ngFor="let link of links">
+        <a [href]="getAnchor(link)" class="nav__link">{{ link }}</a>
+      </li>
+    </ul>
+
+    <!-- CTA -->
+    <a [href]="getWhatsAppUrl()" target="_blank" class="nav__cta">
+      Get Started →
+    </a>
+
+    <!-- Mobile Hamburger -->
+    <button class="nav__burger" (click)="toggleMenu()" aria-label="Toggle menu">
+      <span [class.open]="menuOpen()"></span>
+      <span [class.open]="menuOpen()"></span>
+      <span [class.open]="menuOpen()"></span>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile" [class.open]="menuOpen()">
+    <ul>
+      <li *ngFor="let link of links">
+        <a [href]="getAnchor(link)" class="nav__mobile-link" (click)="menuOpen.set(false)">{{ link }}</a>
+      </li>
+    </ul>
+    <a [href]="getWhatsAppUrl()" target="_blank" class="btn-primary" style="margin-top: 1.5rem; width: 100%; justify-content: center;">
+      Get Started →
+    </a>
+  </div>
+</nav>

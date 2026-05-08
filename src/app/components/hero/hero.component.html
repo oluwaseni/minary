@@ -1,0 +1,59 @@
+<section id="home" class="hero">
+
+  <!-- Accent block top-right (Gong-style) -->
+  <div class="hero__accent-block"></div>
+
+  <!-- Decorative circles -->
+  <div class="hero__circle hero__circle--lg"></div>
+  <div class="hero__circle hero__circle--dot"></div>
+  <div class="hero__circle hero__circle--sm"></div>
+  <div class="hero__circle hero__circle--ring"></div>
+
+  <div class="wrap hero__inner">
+
+    <!-- Left: Copy -->
+    <div class="hero__copy" [class.visible]="visible()">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        FREE WEBSITE WITH EVERY PACKAGE
+      </div>
+
+      <h1 class="h1 hero__headline">{{ config.business.tagline }}</h1>
+
+      <p class="body-text hero__sub">{{ config.business.sub }}</p>
+
+      <div class="hero__ctas">
+        <a [href]="getWhatsAppUrl()" target="_blank" class="btn-primary">
+          Claim Your Free Website →
+        </a>
+        <a href="#packages" class="btn-outline">See Packages</a>
+      </div>
+    </div>
+
+    <!-- Right: Carousel -->
+    <div class="hero__image-wrap" [class.visible]="visible()">
+      <div class="hero__carousel">
+        <img
+          *ngFor="let img of images; let i = index"
+          [src]="img"
+          alt="Luminary & Co."
+          class="hero__photo"
+          [class.active]="i === currentIndex()"
+          [class.exit]="i === prevIndex()"
+        />
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Stats bar -->
+  <div class="hero__stats">
+    <div class="wrap hero__stats-inner">
+      <div class="hero__stat" *ngFor="let stat of config.stats">
+        <span class="hero__stat-val">{{ stat.val }}</span>
+        <span class="hero__stat-label">{{ stat.label }}</span>
+      </div>
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,40 @@
+<section id="packages" class="packages section">
+  <div class="wrap">
+    <div class="packages__header">
+      <span class="section-label">— Pricing</span>
+      <h2 class="h2 packages__headline">Simple, Transparent Pricing</h2>
+      <p class="body-text packages__sub">
+        All packages include a <strong class="packages__free">free professionally built website.</strong>
+        Minimum 6-month commitment.
+      </p>
+    </div>
+
+    <div class="packages__grid">
+      <div
+        class="packages__card"
+        [class.packages__card--hot]="pkg.hot"
+        *ngFor="let pkg of config.packages"
+      >
+        <div class="packages__badge" *ngIf="pkg.hot">MOST POPULAR</div>
+
+        <div class="packages__name">{{ pkg.name }}</div>
+
+        <div class="packages__price-row">
+          <span class="packages__currency">₦</span>
+          <span class="packages__price">{{ pkg.price }}</span>
+          <span class="packages__period">{{ pkg.period }}</span>
+        </div>
+
+        <ul class="packages__features">
+          <li *ngFor="let f of pkg.features">
+            <span class="packages__check">✓</span> {{ f }}
+          </li>
+        </ul>
+
+        <a [href]="getWhatsAppUrl()" target="_blank" class="packages__cta">
+          Get Started →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

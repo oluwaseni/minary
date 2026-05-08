@@ -1,0 +1,32 @@
+<section class="problem section">
+  <div class="wrap problem__inner">
+
+    <!-- Pain points visual -->
+    <div class="problem__card">
+      <div class="problem__card-accent"></div>
+      <div class="problem__item" *ngFor="let p of config.problems">
+        <span class="problem__item-icon">{{ p.icon }}</span>
+        <span class="problem__item-text">"{{ p.text }}"</span>
+      </div>
+    </div>
+
+    <!-- Copy -->
+    <div class="problem__copy">
+      <span class="section-label">— Sound Familiar?</span>
+      <h2 class="h2 problem__headline">
+        Most Nigerian Businesses Struggle Online.
+        <em class="problem__accent">We Fix That.</em>
+      </h2>
+      <p class="body-text problem__body">
+        You built a great business. But without a strong online presence, you are invisible to thousands of potential customers searching for exactly what you offer.
+      </p>
+      <p class="body-text problem__body">
+        We take everything off your plate — your website, your content, your ads, your strategy — so you can focus on what you do best.
+      </p>
+      <a [href]="getWhatsAppUrl()" target="_blank" class="btn-primary">
+        Let us Talk →
+      </a>
+    </div>
+
+  </div>
+</section>

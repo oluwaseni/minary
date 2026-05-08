@@ -1,0 +1,130 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s;
+
+  &.scrolled {
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  &__wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__logo {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--black);
+    letter-spacing: -0.5px;
+    margin-right: auto;
+  }
+
+  &__links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  &__link {
+    color: #444;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  &__cta {
+    background: var(--accent);
+    color: var(--white);
+    padding: 0.55rem 1.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    transition: background 0.2s;
+    white-space: nowrap;
+
+    &:hover {
+      background: var(--accent-dark);
+    }
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+
+    span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--black);
+      transition: all 0.3s;
+
+      &:nth-child(1).open { transform: rotate(45deg) translate(5px, 5px); }
+      &:nth-child(2).open { opacity: 0; }
+      &:nth-child(3).open { transform: rotate(-45deg) translate(5px, -5px); }
+    }
+
+    @media (max-width: 900px) {
+      display: flex;
+    }
+  }
+
+  &__mobile {
+    display: none;
+    flex-direction: column;
+    padding: 1.5rem 2rem 2rem;
+    background: var(--white);
+    border-top: 1px solid var(--gray-200);
+
+    &.open {
+      display: flex;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+  &__mobile-link {
+    display: block;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--black);
+    border-bottom: 1px solid var(--gray-200);
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
