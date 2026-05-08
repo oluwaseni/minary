@@ -23,15 +23,12 @@
   }
 
   &__logo {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--black);
+    letter-spacing: -0.5px;
     margin-right: auto;
-    display: flex;
-    align-items: center;
-  }
-
-  &__logo-img {
-    height: 52px;
-    width: auto;
-    display: block;
   }
 
   &__links {

@@ -12,7 +12,7 @@ import { SITE_CONFIG } from '../../config/site.config';
 
         <!-- Brand -->
         <div class="f-brand">
-          <img src="assets/logo.png" alt="Minary & Co." class="f-logo" />
+          <span class="f-logo">{{ config.business.name }}</span>
           <p class="f-tagline">{{ config.business.sub }}</p>
           <div class="f-socials">
             <a [href]="config.business.instagram" target="_blank" class="f-social">Instagram</a>
@@ -63,7 +63,7 @@ import { SITE_CONFIG } from '../../config/site.config';
     .f-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; padding: 4rem 2rem 3rem; max-width: 1100px; margin: 0 auto; }
     @media (max-width: 768px) { .f-top { grid-template-columns: 1fr 1fr; gap: 2rem; padding: 3rem 1.25rem 2rem; } }
     @media (max-width: 480px) { .f-top { grid-template-columns: 1fr; } }
-    .f-logo { height: 60px; width: auto; display: block; margin-bottom: 0.75rem; filter: brightness(0) invert(1); }
+    .f-logo { color: white; font-weight: 900; font-size: 1.5rem; font-family: var(--font-serif); display: block; margin-bottom: 0.75rem; }
     .f-tagline { line-height: 1.65; max-width: 260px; margin-bottom: 1.5rem; font-size: 0.83rem; }
     .f-socials { display: flex; gap: 1.25rem; }
     .f-social { color: rgba(255,255,255,0.35); font-size: 0.8rem; transition: color 0.2s; text-decoration: none; }
