@@ -3,7 +3,7 @@
 // ============================================================
 export const SITE_CONFIG = {
   business: {
-    name: 'Avaxels',
+    name: 'Avaxels & Co.',
     tagline: 'The #1 Digital Agency For Nigerian Businesses',
     sub: 'We build your website for free, manage your social media and run your ads — so you can focus on running your business.',
     phone: '+2347033982939',
@@ -24,7 +24,7 @@ export const SITE_CONFIG = {
   ],
 
   services: [
-    { icon: '🌐', title: 'Free Website', desc: 'Every client gets a professionally built, mobile-first website at zero extra cost.' },
+    { icon: '🌐', title: 'Website Included', desc: 'Every package includes a professionally built, mobile-first website at no extra cost.' },
     { icon: '📱', title: 'Social Media', desc: 'Daily content, captions and scheduling across Instagram, Facebook and Twitter.' },
     { icon: '📣', title: 'Paid Ads', desc: 'Facebook and Google ad campaigns managed to bring you real paying customers.' },
     { icon: '📊', title: 'Monthly Reports', desc: 'Clear weekly and monthly reports showing your growth and what we are doing about it.' },
@@ -42,24 +42,24 @@ export const SITE_CONFIG = {
   packages: [
     {
       name: 'Starter',
-      price: '200,000',
+      price: '150,000',
       period: '/month',
       hot: false,
-      features: ['Free 5-page website', '3 posts/week', 'Caption writing', 'Monthly report', 'WhatsApp support'],
+      features: ['5-page website included', '3 posts/week', 'Caption writing', 'Monthly report', 'WhatsApp support'],
     },
     {
       name: 'Growth',
       price: '300,000',
       period: '/month',
       hot: true,
-      features: ['Free custom website', '5 posts/week', 'Content strategy', 'Basic ads management', 'Weekly reports', 'Monthly strategy call'],
+      features: ['Custom website included', '5 posts/week', 'Content strategy', 'Basic ads management', 'Weekly reports', 'Monthly strategy call'],
     },
     {
       name: 'Premium',
       price: 'Custom',
       period: '',
       hot: false,
-      features: ['Free advanced website', 'Daily content', 'Full ads management', 'SEO optimization', 'Priority support', 'Dedicated account manager'],
+      features: ['Advanced website included', 'Daily content', 'Full ads management', 'SEO optimization', 'Priority support', 'Dedicated account manager'],
     },
   ],
 
