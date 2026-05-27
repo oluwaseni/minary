@@ -42,22 +42,22 @@ export const SITE_CONFIG = {
   packages: [
     {
       name: 'Starter',
-      price: '100,000',
+      price: '200,000',
       period: '/month',
       hot: false,
       features: ['Free 5-page website', '3 posts/week', 'Caption writing', 'Monthly report', 'WhatsApp support'],
     },
     {
       name: 'Growth',
-      price: '150,000',
+      price: '300,000',
       period: '/month',
       hot: true,
       features: ['Free custom website', '5 posts/week', 'Content strategy', 'Basic ads management', 'Weekly reports', 'Monthly strategy call'],
     },
     {
       name: 'Premium',
-      price: '300,000',
-      period: '/month',
+      price: 'Custom',
+      period: '',
       hot: false,
       features: ['Free advanced website', 'Daily content', 'Full ads management', 'SEO optimization', 'Priority support', 'Dedicated account manager'],
     },
