@@ -29,6 +29,7 @@ export const SITE_CONFIG = {
     { icon: '📣', title: 'Paid Ads', desc: 'Facebook and Google ad campaigns managed to bring you real paying customers.' },
     { icon: '📊', title: 'Monthly Reports', desc: 'Clear weekly and monthly reports showing your growth and what we are doing about it.' },
     { icon: '✍️', title: 'Content Strategy', desc: 'A full content calendar and brand voice guide built specifically for your audience.' },
+    { icon: '📧', title: 'Email Marketing', desc: 'We write, design and send targeted email campaigns that keep your audience engaged and drive repeat sales.' },
     { icon: '🏛️', title: 'CAC Registration', desc: 'We handle your business registration from start to finish as an optional add-on.' },
   ],
 
@@ -52,14 +53,14 @@ export const SITE_CONFIG = {
       price: '300,000',
       period: '/month',
       hot: true,
-      features: ['Custom website included', '5 posts/week', 'Content strategy', 'Basic ads management', 'Weekly reports', 'Monthly strategy call'],
+      features: ['Custom website included', '5 posts/week', 'Content strategy', 'Basic ads management', 'Email campaigns', 'Weekly reports', 'Monthly strategy call'],
     },
     {
       name: 'Premium',
       price: 'Custom',
       period: '',
       hot: false,
-      features: ['Advanced website included', 'Daily content', 'Full ads management', 'SEO optimization', 'Priority support', 'Dedicated account manager'],
+      features: ['Advanced website included', 'Daily content', 'Full ads management', 'Email marketing automation', 'SEO optimization', 'Priority support', 'Dedicated account manager'],
     },
   ],
 
