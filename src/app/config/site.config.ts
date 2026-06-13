@@ -5,9 +5,9 @@ export const SITE_CONFIG = {
   business: {
     name: 'Avaxels & Co.',
     tagline: 'The #1 Digital Agency For Nigerian Businesses',
-    sub: 'We build your website for free, manage your social media and run your ads — so you can focus on running your business.',
+    sub: 'We build your website, manage your social media and run your ads — so you can focus on running your business.',
     phone: '+2347033982939',
-    email: 'hello@luminaryco.ng',
+    email: 'hello@avaxel.com',
     address: 'Victoria Island, Lagos',
     whatsapp: '2347033982939',
     instagram: 'https://instagram.com/',
