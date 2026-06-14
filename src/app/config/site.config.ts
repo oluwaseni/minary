@@ -3,7 +3,7 @@
 // ============================================================
 export const SITE_CONFIG = {
   business: {
-    name: 'Avaxels & Co.',
+    name: 'Avaxel & Co.',
     tagline: 'The #1 Digital Agency For Nigerian Businesses',
     sub: 'We build your website, manage your social media and run your ads — so you can focus on running your business.',
     phone: '+2347033982939',
