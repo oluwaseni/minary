@@ -2,7 +2,7 @@
   <div class="wrap contact__inner">
 
     <!-- Left copy -->
-    <div class="contact__copy">
+    <div class="contact__copy" appReveal>
       <span class="section-label">— Get In Touch</span>
       <h2 class="h2 contact__headline">Let us Start Growing Your Business</h2>
       <p class="body-text contact__body">
@@ -25,7 +25,7 @@
     </div>
 
     <!-- Right form -->
-    <div class="contact__form-wrap">
+    <div class="contact__form-wrap" appReveal [appRevealDelay]="120">
       <div class="contact__form">
         <input class="contact__input" type="text" placeholder="Your Name" [(ngModel)]="form.name" />
         <input class="contact__input" type="text" placeholder="Business Name" [(ngModel)]="form.business" />
@@ -35,7 +35,7 @@
         <select class="contact__input contact__select" [(ngModel)]="form.pkg">
           <option value="">Select a Package</option>
           <option *ngFor="let pkg of config.packages" [value]="pkg.name">
-            {{ pkg.name }} — ₦{{ pkg.price }}{{ pkg.period }}
+            {{ pkg.name }}
           </option>
         </select>
 

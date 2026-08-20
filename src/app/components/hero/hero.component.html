@@ -50,7 +50,7 @@
   <div class="hero__stats">
     <div class="wrap hero__stats-inner">
       <div class="hero__stat" *ngFor="let stat of config.stats">
-        <span class="hero__stat-val">{{ stat.val }}</span>
+        <span class="hero__stat-val" [appCountUp]="stat.val"></span>
         <span class="hero__stat-label">{{ stat.label }}</span>
       </div>
     </div>

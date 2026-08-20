@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { SITE_CONFIG } from '../../config/site.config';
+import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
 
 @Component({
   selector: 'app-cta-banner',
   standalone: true,
+  imports: [ScrollRevealDirective],
   template: `
     <section class="cta">
       <div class="cta__blob cta__blob--tr"></div>
       <div class="cta__blob cta__blob--bl"></div>
-      <div class="wrap cta__inner">
+      <div class="wrap cta__inner" appReveal>
         <h2 class="h2 cta__headline">Ready to Grow Your Business Online?</h2>
         <p class="cta__sub">Join 100+ Nigerian businesses already growing with us. Your free website is waiting.</p>
         <a [href]="getWhatsAppUrl()" target="_blank" class="cta__btn">

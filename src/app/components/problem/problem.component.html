@@ -2,16 +2,16 @@
   <div class="wrap problem__inner">
 
     <!-- Pain points visual -->
-    <div class="problem__card">
+    <div class="problem__card" appReveal>
       <div class="problem__card-accent"></div>
-      <div class="problem__item" *ngFor="let p of config.problems">
-        <span class="problem__item-icon">{{ p.icon }}</span>
+      <div class="problem__item" *ngFor="let p of config.problems; let i = index" appReveal [appRevealDelay]="i * 80">
+        <span class="problem__item-icon"><app-icon [name]="p.icon" [size]="22"></app-icon></span>
         <span class="problem__item-text">"{{ p.text }}"</span>
       </div>
     </div>
 
     <!-- Copy -->
-    <div class="problem__copy">
+    <div class="problem__copy" appReveal [appRevealDelay]="120">
       <span class="section-label">— Sound Familiar?</span>
       <h2 class="h2 problem__headline">
         Most Nigerian Businesses Struggle Online.

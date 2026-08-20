@@ -1,6 +1,8 @@
 // ============================================================
 // SITE CONFIG — Change only this file per client
 // ============================================================
+import type { IconName } from '../components/icon/icon.component';
+
 export const SITE_CONFIG = {
   business: {
     name: 'Avaxel & Co.',
@@ -24,14 +26,14 @@ export const SITE_CONFIG = {
   ],
 
   services: [
-    { icon: '🌐', title: 'Website Included', desc: 'Every package includes a professionally built, mobile-first website at no extra cost.' },
-    { icon: '📱', title: 'Social Media', desc: 'Daily content, captions and scheduling across Instagram, Facebook and Twitter.' },
-    { icon: '📣', title: 'Paid Ads', desc: 'Facebook and Google ad campaigns managed to bring you real paying customers.' },
-    { icon: '📊', title: 'Monthly Reports', desc: 'Clear weekly and monthly reports showing your growth and what we are doing about it.' },
-    { icon: '✍️', title: 'Content Strategy', desc: 'A full content calendar and brand voice guide built specifically for your audience.' },
-    { icon: '📧', title: 'Email Marketing', desc: 'We write, design and send targeted email campaigns that keep your audience engaged and drive repeat sales.' },
-    { icon: '🏛️', title: 'CAC Registration', desc: 'We handle your business registration from start to finish as an optional add-on.' },
-  ],
+    { icon: 'globe', title: 'Website Included', desc: 'Every package includes a professionally built, mobile-first website at no extra cost.' },
+    { icon: 'smartphone', title: 'Social Media', desc: 'Daily content, captions and scheduling across Instagram, Facebook and Twitter.' },
+    { icon: 'megaphone', title: 'Paid Ads', desc: 'Facebook and Google ad campaigns managed to bring you real paying customers.' },
+    { icon: 'bar-chart', title: 'Monthly Reports', desc: 'Clear weekly and monthly reports showing your growth and what we are doing about it.' },
+    { icon: 'edit', title: 'Content Strategy', desc: 'A full content calendar and brand voice guide built specifically for your audience.' },
+    { icon: 'mail', title: 'Email Marketing', desc: 'We write, design and send targeted email campaigns that keep your audience engaged and drive repeat sales.' },
+    { icon: 'landmark', title: 'CAC Registration', desc: 'We handle your business registration from start to finish as an optional add-on.' },
+  ] satisfies { icon: IconName; title: string; desc: string }[],
 
   steps: [
     { num: '01', title: 'You Reach Out', desc: 'Send us a WhatsApp or fill the form. We respond within the hour.' },
@@ -43,22 +45,16 @@ export const SITE_CONFIG = {
   packages: [
     {
       name: 'Starter',
-      price: '150,000',
-      period: '/month',
       hot: false,
-      features: ['5-page website included', '3 posts/week', 'Caption writing', 'Monthly report', 'WhatsApp support'],
+      features: ['5-page website included', '3 posts/week', 'Caption writing', 'Basic ads management', 'Email marketing', 'Monthly report', 'WhatsApp support'],
     },
     {
       name: 'Growth',
-      price: '300,000',
-      period: '/month',
       hot: true,
-      features: ['Custom website included', '5 posts/week', 'Content strategy', 'Basic ads management', 'Email campaigns', 'Weekly reports', 'Monthly strategy call'],
+      features: ['Custom website included', '5 posts/week', 'Content strategy', 'Ads management', 'Email campaigns', 'Weekly reports', 'Monthly strategy call'],
     },
     {
       name: 'Premium',
-      price: 'Custom',
-      period: '',
       hot: false,
       features: ['Advanced website included', 'Daily content', 'Full ads management', 'Email marketing automation', 'SEO optimization', 'Priority support', 'Dedicated account manager'],
     },
@@ -71,9 +67,9 @@ export const SITE_CONFIG = {
   ],
 
   problems: [
-    { icon: '😤', text: 'I have no time to post consistently' },
-    { icon: '😕', text: 'My website looks unprofessional' },
-    { icon: '😰', text: 'I don\'t know how to run ads' },
-    { icon: '😩', text: 'My competitors are growing faster than me' },
-  ],
+    { icon: 'clock', text: 'I have no time to post consistently' },
+    { icon: 'layout', text: 'My website looks unprofessional' },
+    { icon: 'target', text: 'I don\'t know how to run ads' },
+    { icon: 'trending-down', text: 'My competitors are growing faster than me' },
+  ] satisfies { icon: IconName; text: string }[],
 };

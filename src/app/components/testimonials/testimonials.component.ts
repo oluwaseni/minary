@@ -1,20 +1,21 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SITE_CONFIG } from '../../config/site.config';
+import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
 
 @Component({
   selector: 'app-testimonials',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ScrollRevealDirective],
   template: `
     <section id="testimonials" class="t-section section">
       <div class="wrap">
-        <div class="t-header">
+        <div class="t-header" appReveal>
           <h2 class="h2 t-headline">Authentic <em>Reviews</em> from<br>Our Valued Clients</h2>
           <p class="t-sub">Find out why Nigerian businesses trust us for their growth. Their stories reflect the real-world impact of our work.</p>
         </div>
         <div class="t-grid">
-          <div class="t-card" *ngFor="let t of config.testimonials">
+          <div class="t-card" *ngFor="let t of config.testimonials; let i = index" appReveal [appRevealDelay]="i * 80">
             <div class="t-quote">&#x201C;</div>
             <p class="t-text">{{ t.text }}</p>
             <div class="t-author">
