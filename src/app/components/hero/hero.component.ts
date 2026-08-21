@@ -1,11 +1,12 @@
 import { Component, OnInit, OnDestroy, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SITE_CONFIG } from '../../config/site.config';
+import { CountUpDirective } from '../../directives/count-up.directive';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, CountUpDirective],
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss'],
 })

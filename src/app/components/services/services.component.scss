@@ -32,9 +32,10 @@
   }
 
   &__card-icon {
-    font-size: 2.2rem;
     display: block;
+    width: fit-content;
     margin-bottom: 1rem;
+    color: var(--accent);
   }
 
   &__card-title {
