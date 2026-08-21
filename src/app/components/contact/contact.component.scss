@@ -51,7 +51,7 @@
 
   &__form-wrap {
     background: var(--gray-50);
-    border: 1.5px solid var(--gray-200);
+    border: 1.5px solid rgba(17, 17, 17, 0.12);
     border-radius: 12px;
     padding: 2.5rem;
   }
@@ -66,10 +66,10 @@
     width: 100%;
     padding: 0.85rem 1rem;
     font-size: 0.95rem;
-    border: 1.5px solid var(--gray-200);
+    border: 1.5px solid rgba(17, 17, 17, 0.14);
     border-radius: 6px;
     outline: none;
-    background: var(--gray-50);
+    background: var(--white);
     color: var(--black);
     font-family: var(--font-sans);
     transition: border-color 0.2s;
